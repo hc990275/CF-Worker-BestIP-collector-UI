@@ -1349,7 +1349,7 @@ async function serveHTML(env) {
                 } catch (error) { const speedElement = document.getElementById(\`speed-\${ip.replace(/\./g, '-')}\`); speedElement.textContent = '错误'; speedElement.className = 'speed-result speed-slow'; }
                 currentTestIndex = i + 1; const progress = (currentTestIndex / totalIPs) * 100; progressBarInner.style.width = \`\${progress}%\`; await new Promise(resolve => setTimeout(resolve, 300));
             }
-            isTesting = false; speedtestBtn.disabled = false; speedtestBtn.textContent = '⚡ 开始测速'; progressBar.style.display = 'none'; statusElement.textContent = 测速完成'; showMessage(\`测速完成，已测试 \${currentTestIndex} 个IP地址\`);
+            isTesting = false; speedtestBtn.disabled = false; speedtestBtn.textContent = '⚡ 开始测速'; progressBar.style.display = 'none'; statusElement.textContent = '测速完成'; showMessage(\`测速完成，已测试 \${currentTestIndex} 个IP地址\`);
             showMessage('正在保存测速结果...', 'success');
             const newFastIPs = []; const items = document.querySelectorAll('.ip-item');
             items.forEach(item => { const ip = item.dataset.ip; const speedEl = document.getElementById(\`speed-\${ip.replace(/\./g, '-')}\`); const flagEl = document.getElementById(\`flag-\${ip.replace(/\./g, '-')}\`); if (speedEl && speedEl.textContent.includes('ms')) { const latency = parseInt(speedEl.textContent); const info = flagEl ? flagEl.textContent : ''; newFastIPs.push({ ip: ip, latency: latency, info: info }); } });
