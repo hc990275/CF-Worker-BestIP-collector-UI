@@ -15,4 +15,4 @@
 [![License](https://img.shields.io/badge/License-MIT-orange)]()
 
 </div>
-项目地址：https://github.com/byJoey/cfnew/tree/main
+项目地址：https://github.com/byJoey/cfnew
