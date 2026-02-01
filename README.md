@@ -15,8 +15,8 @@
     <span style="vertical-align: middle; font-weight: bold; font-size: 15px; margin-right: 5px;">特别鸣谢：</span><a href="https://github.com/cmliu/edgetunnel" target="_blank" style="text-decoration: none; border: none;"><img src="https://img.shields.io/badge/GitHub-CM%E5%A4%A7%E4%BD%AC-181717?style=flat-square&logo=github&logoColor=white" alt="CM大佬" style="vertical-align: middle;"></a><a href="https://github.com/byJoey/cfnew" target="_blank" style="text-decoration: none; border: none;"><img src="https://img.shields.io/badge/GitHub-Joey%E5%A4%A7%E4%BD%AC-181717?style=flat-square&logo=github&logoColor=white" alt="Joey大佬" style="vertical-align: middle; margin-left: 10px;"></a>
   </div>
 
-  <img src="https://github.com/alienwaregf/Cloudflare-Country-Specific-IP-Filter/blob/main/Image/Light.png?raw=true" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="https://github.com/alienwaregf/Cloudflare-Country-Specific-IP-Filter/blob/main/Image/Light.png?raw=true" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <br><br>
-  <img src="https://github.com/alienwaregf/Cloudflare-Country-Specific-IP-Filter/blob/main/Image/Dark.png?raw=true" width="80%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="https://github.com/alienwaregf/Cloudflare-Country-Specific-IP-Filter/blob/main/Image/Dark.png?raw=true" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
 </div>
