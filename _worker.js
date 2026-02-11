@@ -1,20 +1,45 @@
 /**
- * 地区名称映射
+ * 地区名称映射 (全球主要 Cloudflare 节点所在国家/地区)
  */
 const REGION_MAP = {
-    'US': '美国', 'GB': '英国', 'DE': '德国', 'FR': '法国', 'NL': '荷兰',
-    'JP': '日本', 'KR': '韩国', 'SG': '新加坡', 'CA': '加拿大', 'AU': '澳大利亚',
-    'IN': '印度', 'TR': '土耳其', 'TH': '泰国', 'ID': '印尼', 'MY': '马来西亚',
-    'VN': '越南', 'PH': '菲律宾', 'BR': '巴西', 'ZA': '南非', 'IT': '意大利',
-    'ES': '西班牙', 'RU': '俄罗斯', 'HK': '香港', 'TW': '台湾', 'SE': '瑞典',
-    'FI': '芬兰', 'PL': '波兰', 'CH': '瑞士', 'AE': '阿联酋', 'IL': '以色列',
-    'EE': '爱沙尼亚', 'MD': '摩尔多瓦', 'CZ': '捷克', 'LV': '拉脱维亚',
-    'AL': '阿尔巴尼亚', 'SI': '斯洛文尼亚', 'BG': '保加利亚', 'BE': '比利时',
-    'IE': '爱尔兰', 'RO': '罗马尼亚', 'IS': '冰岛', 'LT': '立陶宛',
-    'AT': '奥地利', 'DK': '丹麦', 'NO': '挪威', 'PT': '葡萄牙', 'GR': '希腊',
-    'HU': '匈牙利', 'NZ': '新西兰', 'MX': '墨西哥', 'AR': '阿根廷', 'CL': '智利',
-    'UA': '乌克兰', 'KZ': '哈萨克斯坦', 'SA': '沙特', 'QA': '卡塔尔',
-    'SK': '斯洛伐克', 'HR': '克罗地亚', 'LU': '卢森堡', 'RS': '塞尔维亚'
+    // 亚太地区 (Asia Pacific)
+    'JP': '日本', 'KR': '韩国', 'SG': '新加坡', 'HK': '香港', 'TW': '台湾',
+    'MY': '马来西亚', 'TH': '泰国', 'VN': '越南', 'PH': '菲律宾', 'ID': '印尼',
+    'IN': '印度', 'AU': '澳大利亚', 'NZ': '新西兰', 'KH': '柬埔寨', 'MO': '澳门',
+    'BD': '孟加拉', 'PK': '巴基斯坦', 'NP': '尼泊尔', 'MN': '蒙古', 'LK': '斯里兰卡',
+    'LA': '老挝', 'BN': '文莱', 'MM': '缅甸', 'BT': '不丹', 'MV': '马尔代夫',
+
+    // 北美洲 (North America)
+    'US': '美国', 'CA': '加拿大', 'MX': '墨西哥', 'PR': '波多黎各', 'GU': '关岛',
+    
+    // 欧洲 (Europe)
+    'GB': '英国', 'UK': '英国', 'DE': '德国', 'FR': '法国', 'NL': '荷兰', 'IT': '意大利',
+    'ES': '西班牙', 'PT': '葡萄牙', 'RU': '俄罗斯', 'UA': '乌克兰', 'PL': '波兰',
+    'SE': '瑞典', 'FI': '芬兰', 'NO': '挪威', 'DK': '丹麦', 'IS': '冰岛',
+    'IE': '爱尔兰', 'BE': '比利时', 'LU': '卢森堡', 'CH': '瑞士', 'AT': '奥地利',
+    'CZ': '捷克', 'HU': '匈牙利', 'RO': '罗马尼亚', 'BG': '保加利亚', 'GR': '希腊',
+    'TR': '土耳其', 'HR': '克罗地亚', 'RS': '塞尔维亚', 'SI': '斯洛文尼亚', 'SK': '斯洛伐克',
+    'EE': '爱沙尼亚', 'LV': '拉脱维亚', 'LT': '立陶宛', 'MD': '摩尔多瓦', 'AL': '阿尔巴尼亚',
+    'BA': '波黑', 'ME': '黑山', 'MK': '北马其顿', 'CY': '塞浦路斯', 'MT': '马耳他',
+    'BY': '白俄罗斯', 'GE': '格鲁吉亚', 'AM': '亚美尼亚', 'AZ': '阿塞拜疆',
+
+    // 南美洲 (South America)
+    'BR': '巴西', 'AR': '阿根廷', 'CL': '智利', 'CO': '哥伦比亚', 'PE': '秘鲁',
+    'EC': '厄瓜多尔', 'UY': '乌拉圭', 'PY': '巴拉圭', 'VE': '委内瑞拉', 'BO': '玻利维亚',
+    'GY': '圭亚那', 'SR': '苏里南',
+
+    // 中美洲与加勒比 (Central America & Caribbean)
+    'PA': '巴拿马', 'CR': '哥斯达黎加', 'GT': '危地马拉', 'HN': '洪都拉斯', 'SV': '萨尔瓦多',
+    'NI': '尼加拉瓜', 'JM': '牙买加', 'DO': '多米尼加', 'BS': '巴哈马', 'TT': '特立尼达多巴哥',
+    'BB': '巴巴多斯', 'CW': '库拉索',
+
+    // 中东与非洲 (Middle East & Africa)
+    'ZA': '南非', 'EG': '埃及', 'MA': '摩洛哥', 'DZ': '阿尔及利亚', 'TN': '突尼斯',
+    'NG': '尼日利亚', 'KE': '肯尼亚', 'GH': '加纳', 'TZ': '坦桑尼亚', 'UG': '乌干达',
+    'MU': '毛里求斯', 'RE': '留尼汪', 'AO': '安哥拉', 'MZ': '莫桑比克', 'SN': '塞内加尔',
+    'AE': '阿联酋', 'SA': '沙特', 'IL': '以色列', 'QA': '卡塔尔', 'BH': '巴林',
+    'KW': '科威特', 'OM': '阿曼', 'JO': '约旦', 'LB': '黎巴嫩', 'IQ': '伊拉克',
+    'KZ': '哈萨克斯坦', 'UZ': '乌兹别克斯坦', 'KG': '吉尔吉斯斯坦'
 };
 
 /**
@@ -305,9 +330,9 @@ function getHtml() {
 <div class="relative">
 <button id="githubBtn" 
 onclick="window.open('https://github.com/alienwaregf/Cloudflare-Country-Specific-IP-Filter', '_blank')"
-class="flex items-center gap-3 px-4 py-2 rounded-2xl bg-gradient-to-r from-gray-800 to-gray-700 text-white font-bold shadow-2xl transform-gpu hover:scale-105 transition-all duration-300">
-<i data-lucide="github" class="w-5 h-5 -rotate-12 animate-pulse"></i>
-<span>GitHub项目地址</span>
+class="group h-12 flex items-center rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 shadow-lg ring-1 ring-black/5 dark:ring-white/10 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all px-3.5 hover:px-5 hover:gap-3 ease-out duration-500 hover:duration-1000">
+<i data-lucide="github" class="w-5 h-5 -rotate-0 group-hover:-rotate-12 transition-transform duration-500 flex-shrink-0"></i>
+<span class="max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 transition-all ease-out whitespace-nowrap font-bold overflow-hidden duration-500 hover:duration-1000">GitHub项目地址</span>
 </button>
 </div>
 
@@ -360,7 +385,7 @@ class="flex items-center gap-3 px-4 py-2 rounded-2xl bg-gradient-to-r from-gray-
                         
                         <div id="linkMenu" class="link-menu absolute top-full left-1/2 w-48 pt-4 z-50">
                             <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl shadow-2xl p-2 flex flex-col gap-2 ring-1 ring-black/5">
-                                <div class="text-[10px] text-center text-slate-400 font-bold uppercase tracking-wider py-1">选择使用 API 的项目</div>
+                                <div class="text-[10px] text-center text-slate-400 font-bold uppercase tracking-wider py-1">请选择使用 API 的项目</div>
                                 <button onclick="generateLink('CFnew')" class="btn-matrix h-10 text-xs flex items-center justify-center gap-2 w-full">
                                     <span>CFnew</span>
                                 </button>
@@ -417,7 +442,7 @@ class="flex items-center gap-3 px-4 py-2 rounded-2xl bg-gradient-to-r from-gray-
             return String.fromCodePoint(...codePoints);
         }
         const regionMap = {
-            'US': '美国', 'GB': '英国', 'DE': '德国', 'FR': '法国', 'NL': '荷兰', 'JP': '日本', 'KR': '韩国', 'SG': '新加坡', 'CA': '加拿大', 'AU': '澳大利亚', 'IN': '印度', 'TR': '土耳其', 'TH': '泰国', 'ID': '印尼', 'MY': '马来西亚', 'VN': '越南', 'PH': '菲律宾', 'BR': '巴西', 'ZA': '南非', 'IT': '意大利', 'ES': '西班牙', 'RU': '俄罗斯', 'HK': '香港', 'TW': '台湾', 'SE': '瑞典', 'FI': '芬兰', 'PL': '波兰', 'CH': '瑞士', 'AE': '阿联酋', 'IL': '以色列', 'EE': '爱沙尼亚', 'MD': '摩尔多瓦', 'CZ': '捷克', 'LV': '拉脱维亚', 'AL': '阿尔巴尼亚', 'SI': '斯洛文尼亚', 'BG': '保加利亚', 'BE': '比利时', 'IE': '爱尔兰', 'RO': '罗马尼亚', 'IS': '冰岛', 'LT': '立陶宛', 'AT': '奥地利', 'DK': '丹麦', 'NO': '挪威', 'PT': '葡萄牙', 'GR': '希腊', 'HU': '匈牙利', 'NZ': '新西兰', 'MX': '墨西哥', 'AR': '阿根廷', 'CL': '智利', 'UA': '乌克兰', 'KZ': '哈萨克斯坦', 'SA': '沙特', 'QA': '卡塔尔', 'SK': '斯洛伐克', 'HR': '克罗地亚', 'LU': '卢森堡', 'RS': '塞尔维亚'
+            'JP':'日本','KR':'韩国','SG':'新加坡','HK':'香港','TW':'台湾','MY':'马来西亚','TH':'泰国','VN':'越南','PH':'菲律宾','ID':'印尼','IN':'印度','AU':'澳大利亚','NZ':'新西兰','KH':'柬埔寨','MO':'澳门','BD':'孟加拉','PK':'巴基斯坦','NP':'尼泊尔','MN':'蒙古','LK':'斯里兰卡','LA':'老挝','BN':'文莱','MM':'缅甸','BT':'不丹','MV':'马尔代夫','US':'美国','CA':'加拿大','MX':'墨西哥','PR':'波多黎各','GU':'关岛','GB':'英国','UK':'英国','DE':'德国','FR':'法国','NL':'荷兰','IT':'意大利','ES':'西班牙','PT':'葡萄牙','RU':'俄罗斯','UA':'乌克兰','PL':'波兰','SE':'瑞典','FI':'芬兰','NO':'挪威','DK':'丹麦','IS':'冰岛','IE':'爱尔兰','BE':'比利时','LU':'卢森堡','CH':'瑞士','AT':'奥地利','CZ':'捷克','HU':'匈牙利','RO':'罗马尼亚','BG':'保加利亚','GR':'希腊','TR':'土耳其','HR':'克罗地亚','RS':'塞尔维亚','SI':'斯洛文尼亚','SK':'斯洛伐克','EE':'爱沙尼亚','LV':'拉脱维亚','LT':'立陶宛','MD':'摩尔多瓦','AL':'阿尔巴尼亚','BA':'波黑','ME':'黑山','MK':'北马其顿','CY':'塞浦路斯','MT':'马耳他','BY':'白俄罗斯','GE':'格鲁吉亚','AM':'亚美尼亚','AZ':'阿塞拜疆','BR':'巴西','AR':'阿根廷','CL':'智利','CO':'哥伦比亚','PE':'秘鲁','EC':'厄瓜多尔','UY':'乌拉圭','PY':'巴拉圭','VE':'委内瑞拉','BO':'玻利维亚','GY':'圭亚那','SR':'苏里南','PA':'巴拿马','CR':'哥斯达黎加','GT':'危地马拉','HN':'洪都拉斯','SV':'萨尔瓦多','NI':'尼加拉瓜','JM':'牙买加','DO':'多米尼加','BS':'巴哈马','TT':'特立尼达多巴哥','BB':'巴巴多斯','CW':'库拉索','ZA':'南非','EG':'埃及','MA':'摩洛哥','DZ':'阿尔及利亚','TN':'突尼斯','NG':'尼日利亚','KE':'肯尼亚','GH':'加纳','TZ':'坦桑尼亚','UG':'乌干达','MU':'毛里求斯','RE':'留尼汪','AO':'安哥拉','MZ':'莫桑比克','SN':'塞内加尔','AE':'阿联酋','SA':'沙特','IL':'以色列','QA':'卡塔尔','BH':'巴林','KW':'科威特','OM':'阿曼','JO':'约旦','LB':'黎巴嫩','IQ':'伊拉克','KZ':'哈萨克斯坦','UZ':'乌兹别克斯坦','KG':'吉尔吉斯斯坦'
         };
         let selected = []; let fmt = 'line'; let allRegions = [];
         async function init() {
@@ -583,26 +608,6 @@ class="flex items-center gap-3 px-4 py-2 rounded-2xl bg-gradient-to-r from-gray-
         
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => { if(currentThemeMode === 'system') applyTheme(); });
         applyTheme(); init(); lucide.createIcons();
-        function toggleGitHubTooltip(e) {
-            const tooltip = document.getElementById('githubTooltip');
-            if(window.innerWidth <= 768) {
-                tooltip.classList.toggle('opacity-100');
-                tooltip.classList.toggle('pointer-events-auto');
-            }
-        }
-        
-        document.getElementById('githubBtn').addEventListener('mouseenter', () => {
-            if(window.innerWidth > 768) {
-                const tooltip = document.getElementById('githubTooltip');
-                tooltip.classList.add('opacity-100', 'pointer-events-auto');
-            }
-        });
-        document.getElementById('githubBtn').addEventListener('mouseleave', () => {
-            if(window.innerWidth > 768) {
-                const tooltip = document.getElementById('githubTooltip');
-                tooltip.classList.remove('opacity-100', 'pointer-events-auto');
-            }
-        });
     </script>
 </body>
 </html>
